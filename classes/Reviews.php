@@ -14,8 +14,6 @@ class Reviews{
             
         $publictime = date( "d.m.y H:i" );
         
-        $file_sqlt = new PDO('sqlite:../db/db.sqlite3');
-        
         if(!empty($image)){
             
             $img_format = exif_imagetype($_FILES['file']['tmp_name']);
